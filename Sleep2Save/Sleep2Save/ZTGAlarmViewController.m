@@ -27,13 +27,17 @@
 {
     [super viewDidLoad];
     
-    self.listData = @[@"New Alarm..."];
+    self.listData = @[@"Create New Alarm..."];
     self.title = @"Sleep2Save";
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self.navigationController setToolbarHidden:NO];
+    self.navigationController.toolbar.tintColor = [UIColor grayColor];
+    self.navigationController.navigationBar.tintColor = [UIColor grayColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,10 +60,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    if (section == 2)
-        return ([self.listData count] - 1);
+    if (section == 1 || (section == 0 && [self.listData count] == 1))
+        return 1;
     
-    return [self.listData count];
+    return [self.listData count] - 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,7 +75,15 @@
     }
     
     NSUInteger row = [indexPath row];
-    cell.textLabel.text = [self.listData objectAtIndex:row];
+    
+    if(indexPath.section == 1 || (indexPath.section == 0 && [self.listData count] == 1))
+    {
+        cell.textLabel.text = cell.textLabel.text = [self.listData objectAtIndex:row];
+    }
+    else if(indexPath.section == 0)
+    {
+        cell.textLabel.text = [self.listData objectAtIndex:row + 1];
+    }
     
     return cell;
 }

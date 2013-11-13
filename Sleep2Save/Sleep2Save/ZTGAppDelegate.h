@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class ZTGToolbarViewController;
+
+@class ZTGRootViewController;
+
 @interface ZTGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) ZTGToolbarViewController *toolbarViewController;
+@property (strong, nonatomic) ZTGRootViewController *navController;
+
 @end

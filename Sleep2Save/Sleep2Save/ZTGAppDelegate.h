@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ZTGToolbarViewController;
 @interface ZTGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) ZTGToolbarViewController *toolbarViewController;
 @end

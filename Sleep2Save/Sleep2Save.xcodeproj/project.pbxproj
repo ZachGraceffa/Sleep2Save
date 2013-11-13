@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92746C7018340A8E00A66260 /* ZTGAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */; };
+		92746C7118340A8E00A66260 /* ZTGAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */; };
 		92E19D241826F3AF0087047D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D231826F3AF0087047D /* UIKit.framework */; };
 		92E19D261826F3AF0087047D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D251826F3AF0087047D /* Foundation.framework */; };
 		92E19D281826F3AF0087047D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D271826F3AF0087047D /* CoreGraphics.framework */; };
@@ -16,9 +18,14 @@
 		92E19D361826F3AF0087047D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E19D351826F3AF0087047D /* Default.png */; };
 		92E19D381826F3AF0087047D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E19D371826F3AF0087047D /* Default@2x.png */; };
 		92E19D3A1826F3AF0087047D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E19D391826F3AF0087047D /* Default-568h@2x.png */; };
+		92E19D4C1826F5EE0087047D /* ZTGToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E19D4B1826F5EE0087047D /* ZTGToolbarViewController.m */; };
+		92E19D4E1826F60D0087047D /* Toolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E19D4D1826F60D0087047D /* Toolbar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92746C6D18340A8D00A66260 /* ZTGAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarmViewController.h; sourceTree = "<group>"; };
+		92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarmViewController.m; sourceTree = "<group>"; };
+		92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAlarmViewController.xib; sourceTree = "<group>"; };
 		92E19D201826F3AF0087047D /* Sleep2Save.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleep2Save.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E19D231826F3AF0087047D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		92E19D251826F3AF0087047D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +39,9 @@
 		92E19D351826F3AF0087047D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		92E19D371826F3AF0087047D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		92E19D391826F3AF0087047D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		92E19D4A1826F5EE0087047D /* ZTGToolbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGToolbarViewController.h; sourceTree = "<group>"; };
+		92E19D4B1826F5EE0087047D /* ZTGToolbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGToolbarViewController.m; sourceTree = "<group>"; };
+		92E19D4D1826F60D0087047D /* Toolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Toolbar.xib; path = ../Toolbar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,12 @@
 				92E19D321826F3AF0087047D /* ZTGAppDelegate.h */,
 				92E19D331826F3AF0087047D /* ZTGAppDelegate.m */,
 				92E19D2A1826F3AF0087047D /* Supporting Files */,
+				92E19D4A1826F5EE0087047D /* ZTGToolbarViewController.h */,
+				92E19D4B1826F5EE0087047D /* ZTGToolbarViewController.m */,
+				92E19D4D1826F60D0087047D /* Toolbar.xib */,
+				92746C6D18340A8D00A66260 /* ZTGAlarmViewController.h */,
+				92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */,
+				92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */,
 			);
 			path = Sleep2Save;
 			sourceTree = "<group>";
@@ -155,6 +171,8 @@
 				92E19D361826F3AF0087047D /* Default.png in Resources */,
 				92E19D381826F3AF0087047D /* Default@2x.png in Resources */,
 				92E19D3A1826F3AF0087047D /* Default-568h@2x.png in Resources */,
+				92E19D4E1826F60D0087047D /* Toolbar.xib in Resources */,
+				92746C7118340A8E00A66260 /* ZTGAlarmViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +185,8 @@
 			files = (
 				92E19D301826F3AF0087047D /* main.m in Sources */,
 				92E19D341826F3AF0087047D /* ZTGAppDelegate.m in Sources */,
+				92E19D4C1826F5EE0087047D /* ZTGToolbarViewController.m in Sources */,
+				92746C7018340A8E00A66260 /* ZTGAlarmViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +301,7 @@
 				92E19D3F1826F3AF0087047D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

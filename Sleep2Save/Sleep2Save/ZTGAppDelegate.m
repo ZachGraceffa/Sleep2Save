@@ -7,13 +7,20 @@
 //
 
 #import "ZTGAppDelegate.h"
-
+#import "ZTGToolbarViewController.h"
 @implementation ZTGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.toolbarViewController = [[ZTGToolbarViewController alloc] initWithNibName:@"Toolbar" bundle:nil];
+    UIView *toolbarView = self.toolbarViewController.view;
+    CGRect toolbarViewFrame = toolbarView.frame;
+    toolbarViewFrame.origin.y += [UIApplication sharedApplication].statusBarFrame.size.height;
+    toolbarView.frame = toolbarViewFrame;
+    self.window.rootViewController = self.toolbarViewController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

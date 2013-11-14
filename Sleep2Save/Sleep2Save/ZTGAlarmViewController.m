@@ -77,7 +77,7 @@
     
     if(indexPath.section == 1 || (indexPath.section == 0 && [self.listData count] == 1))
     {
-        cell.textLabel.text = cell.textLabel.text = [self.listData objectAtIndex:row];
+        cell.textLabel.text = [self.listData objectAtIndex:row];
     }
     else if(indexPath.section == 0)
     {
@@ -137,6 +137,7 @@
     {
         //initialize the alarm
     }
+    
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      

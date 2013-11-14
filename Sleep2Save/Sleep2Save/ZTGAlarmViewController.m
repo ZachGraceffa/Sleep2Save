@@ -7,7 +7,8 @@
 //
 
 #import "ZTGAlarmViewController.h"
-//#import "ZTGCreateAlarmViewController.h"
+#import "ZTGAlarmDetailViewController.h"
+
 @interface ZTGAlarmViewController ()
 
 @end
@@ -30,10 +31,10 @@
     self.listData = @[@"Create New Alarm..."];
     self.title = @"Sleep2Save";
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+     self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self.navigationController setToolbarHidden:NO];
     self.navigationController.toolbar.tintColor = [UIColor grayColor];
@@ -45,8 +46,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -127,17 +126,20 @@
  }
  */
 
-#pragma mark - Table view delegate
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
+     ZTGAlarmDetailViewController *detailViewController = [[ZTGAlarmDetailViewController alloc] initWithNibName:@"ZTGAlarmDetailViewController" bundle:nil];
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if(![cell.textLabel.text isEqual:@"Create New Alarm..."])
+    {
+        //initialize the alarm
+    }
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+     
 }
 
 @end

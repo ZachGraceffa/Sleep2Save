@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class ZTGCreateAlarmViewController;
+@class ZTGAlarmDetailViewController;
 
 @interface ZTGAlarmViewController : UITableViewController
 

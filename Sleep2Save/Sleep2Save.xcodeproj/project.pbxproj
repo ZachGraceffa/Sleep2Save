@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		92746C7018340A8E00A66260 /* ZTGAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */; };
 		92746C7118340A8E00A66260 /* ZTGAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */; };
+		92746C7F183460F500A66260 /* ZTGAlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C7D183460F500A66260 /* ZTGAlarmDetailViewController.m */; };
+		92746C80183460F500A66260 /* ZTGAlarmDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92746C7E183460F500A66260 /* ZTGAlarmDetailViewController.xib */; };
 		92E19D241826F3AF0087047D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D231826F3AF0087047D /* UIKit.framework */; };
 		92E19D261826F3AF0087047D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D251826F3AF0087047D /* Foundation.framework */; };
 		92E19D281826F3AF0087047D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D271826F3AF0087047D /* CoreGraphics.framework */; };
@@ -24,6 +26,9 @@
 		92746C6D18340A8D00A66260 /* ZTGAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarmViewController.h; sourceTree = "<group>"; };
 		92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarmViewController.m; sourceTree = "<group>"; };
 		92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAlarmViewController.xib; sourceTree = "<group>"; };
+		92746C7C183460F500A66260 /* ZTGAlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarmDetailViewController.h; sourceTree = "<group>"; };
+		92746C7D183460F500A66260 /* ZTGAlarmDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarmDetailViewController.m; sourceTree = "<group>"; };
+		92746C7E183460F500A66260 /* ZTGAlarmDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAlarmDetailViewController.xib; sourceTree = "<group>"; };
 		92E19D201826F3AF0087047D /* Sleep2Save.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleep2Save.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E19D231826F3AF0087047D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		92E19D251826F3AF0087047D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +94,9 @@
 				92746C6D18340A8D00A66260 /* ZTGAlarmViewController.h */,
 				92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */,
 				92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */,
+				92746C7C183460F500A66260 /* ZTGAlarmDetailViewController.h */,
+				92746C7D183460F500A66260 /* ZTGAlarmDetailViewController.m */,
+				92746C7E183460F500A66260 /* ZTGAlarmDetailViewController.xib */,
 			);
 			path = Sleep2Save;
 			sourceTree = "<group>";
@@ -164,6 +172,7 @@
 				92E19D381826F3AF0087047D /* Default@2x.png in Resources */,
 				92E19D3A1826F3AF0087047D /* Default-568h@2x.png in Resources */,
 				92746C7118340A8E00A66260 /* ZTGAlarmViewController.xib in Resources */,
+				92746C80183460F500A66260 /* ZTGAlarmDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				92E19D301826F3AF0087047D /* main.m in Sources */,
 				92E19D341826F3AF0087047D /* ZTGAppDelegate.m in Sources */,
 				92746C7018340A8E00A66260 /* ZTGAlarmViewController.m in Sources */,
+				92746C7F183460F500A66260 /* ZTGAlarmDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92672AA418397A1400C12594 /* ZTGAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92672AA218397A1300C12594 /* ZTGAboutViewController.m */; };
+		92672AA518397A1400C12594 /* ZTGAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92672AA318397A1300C12594 /* ZTGAboutViewController.xib */; };
 		92746C7018340A8E00A66260 /* ZTGAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */; };
 		92746C7118340A8E00A66260 /* ZTGAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */; };
 		92746C8318346A5400A66260 /* ZTGSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C8218346A5400A66260 /* ZTGSingleton.m */; };
 		92746C8718347DF500A66260 /* ZTGAlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C8518347DF500A66260 /* ZTGAlarmDetailViewController.m */; };
 		92746C8818347DF500A66260 /* ZTGAlarmDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92746C8618347DF500A66260 /* ZTGAlarmDetailViewController.xib */; };
+		92880874183D4031002C1DE0 /* ZTGAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 92880873183D4031002C1DE0 /* ZTGAlarm.m */; };
 		92E19D241826F3AF0087047D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D231826F3AF0087047D /* UIKit.framework */; };
 		92E19D261826F3AF0087047D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D251826F3AF0087047D /* Foundation.framework */; };
 		92E19D281826F3AF0087047D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D271826F3AF0087047D /* CoreGraphics.framework */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92672AA118397A1300C12594 /* ZTGAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAboutViewController.h; sourceTree = "<group>"; };
+		92672AA218397A1300C12594 /* ZTGAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAboutViewController.m; sourceTree = "<group>"; };
+		92672AA318397A1300C12594 /* ZTGAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAboutViewController.xib; sourceTree = "<group>"; };
 		92746C6D18340A8D00A66260 /* ZTGAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarmViewController.h; sourceTree = "<group>"; };
 		92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarmViewController.m; sourceTree = "<group>"; };
 		92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAlarmViewController.xib; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		92746C8418347DF500A66260 /* ZTGAlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarmDetailViewController.h; sourceTree = "<group>"; };
 		92746C8518347DF500A66260 /* ZTGAlarmDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarmDetailViewController.m; sourceTree = "<group>"; };
 		92746C8618347DF500A66260 /* ZTGAlarmDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAlarmDetailViewController.xib; sourceTree = "<group>"; };
+		92880872183D4031002C1DE0 /* ZTGAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarm.h; sourceTree = "<group>"; };
+		92880873183D4031002C1DE0 /* ZTGAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarm.m; sourceTree = "<group>"; };
 		92E19D201826F3AF0087047D /* Sleep2Save.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleep2Save.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E19D231826F3AF0087047D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		92E19D251826F3AF0087047D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +110,11 @@
 				92746C8418347DF500A66260 /* ZTGAlarmDetailViewController.h */,
 				92746C8518347DF500A66260 /* ZTGAlarmDetailViewController.m */,
 				92746C8618347DF500A66260 /* ZTGAlarmDetailViewController.xib */,
+				92672AA118397A1300C12594 /* ZTGAboutViewController.h */,
+				92672AA218397A1300C12594 /* ZTGAboutViewController.m */,
+				92672AA318397A1300C12594 /* ZTGAboutViewController.xib */,
+				92880872183D4031002C1DE0 /* ZTGAlarm.h */,
+				92880873183D4031002C1DE0 /* ZTGAlarm.m */,
 			);
 			path = Sleep2Save;
 			sourceTree = "<group>";
@@ -178,6 +191,7 @@
 				92E19D3A1826F3AF0087047D /* Default-568h@2x.png in Resources */,
 				92746C7118340A8E00A66260 /* ZTGAlarmViewController.xib in Resources */,
 				92746C8818347DF500A66260 /* ZTGAlarmDetailViewController.xib in Resources */,
+				92672AA518397A1400C12594 /* ZTGAboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +207,8 @@
 				92746C7018340A8E00A66260 /* ZTGAlarmViewController.m in Sources */,
 				92746C8318346A5400A66260 /* ZTGSingleton.m in Sources */,
 				92746C8718347DF500A66260 /* ZTGAlarmDetailViewController.m in Sources */,
+				92672AA418397A1400C12594 /* ZTGAboutViewController.m in Sources */,
+				92880874183D4031002C1DE0 /* ZTGAlarm.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

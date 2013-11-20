@@ -12,7 +12,17 @@
 
 - (id)init {
     if (self = [super init]) {
-
+        
+        self.listData = [[ NSMutableArray alloc ] initWithCapacity: 8 ];
+        
+        for (int i = 0; i < 8; i++ ) {
+            ZTGAlarm *alarm = [[ZTGAlarm alloc] init];
+            [self.listData addObject:alarm];//error line!!
+        }
+        
+        self.balance = [NSNumber numberWithDouble:0.00];
+        self.formatter = [[NSNumberFormatter alloc] init];
+        [self.formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
     }
     return self;
 }
@@ -28,6 +38,11 @@
         }
         return myself;
     }
+}
+
+- (NSString *)getBalance
+{
+    return [self.formatter stringFromNumber:self.balance];
 }
 
 /*- (NSMutableArray *)getChannelNames

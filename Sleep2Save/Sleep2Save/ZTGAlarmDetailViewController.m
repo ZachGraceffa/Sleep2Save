@@ -24,6 +24,10 @@
 {
     [super viewDidLoad];
 
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"Operation Failed" message:@"Operation not yet developed." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    [alert show];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  

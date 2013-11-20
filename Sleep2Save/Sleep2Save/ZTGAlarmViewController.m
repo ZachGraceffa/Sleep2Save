@@ -8,6 +8,7 @@
 
 #import "ZTGAlarmViewController.h"
 #import "ZTGAlarmDetailViewController.h"
+#import "ZTGAboutViewController.h"
 
 @interface ZTGAlarmViewController ()
 
@@ -28,17 +29,43 @@
 {
     [super viewDidLoad];
     
-    self.listData = @[@"Create New Alarm..."];
+    self.data = [ZTGSingleton sharedInstance];
     self.title = @"Sleep2Save";
+    
     // Uncomment the following line to preserve selection between presentations.
-     self.clearsSelectionOnViewWillAppear = NO;
+    // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    //self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self.navigationController setToolbarHidden:NO];
     self.navigationController.toolbar.tintColor = [UIColor grayColor];
     self.navigationController.navigationBar.tintColor = [UIColor grayColor];
+    
+    //about button
+    UIBarButtonItem *aboutButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"About"
+                                   style:UIBarButtonItemStyleBordered
+                                   target:self
+                                   action:@selector(aboutView)];
+    self.navigationItem.leftBarButtonItem = aboutButton;
+    
+    //cashout button
+    UIBarButtonItem *cashoutButton = [[UIBarButtonItem alloc]
+                                    initWithTitle:@"CASHOUT"
+                                    style:UIBarButtonItemStyleBordered
+                                    target:self
+                                    action:@selector(cashoutPressed)];
+    
+    //balance label
+    self.balance = [[UILabel alloc] initWithFrame:CGRectMake(0,0,215,20)];
+    self.balance.text = [NSString stringWithFormat:@"               Balance: %@", self.data.getBalance];
+    self.balance.backgroundColor = [UIColor clearColor];
+    UIBarButtonItem *balanceItem = [[UIBarButtonItem alloc] initWithCustomView:self.balance];
+
+    
+    [self setToolbarItems:[NSArray arrayWithObjects:cashoutButton, balanceItem, nil] animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +77,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    if([self.listData count] > 1)
+    if([self.data.listData count] > 0 && [self.data.listData count] <= 8)
         return 2;
     else
         return 1;
@@ -59,10 +86,17 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    if (section == 1 || (section == 0 && [self.listData count] == 1))
+    if (section == 1 || (section == 0 && [self.data.listData count] == 0))
         return 1;
     
-    return [self.listData count] - 1;
+    NSInteger count = 0;
+    
+    for (NSInteger i = 0; i < 8; i++ ) {
+        if([[[self.data.listData objectAtIndex:i] name] length] != 0)
+            count ++;
+    }
+    
+    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -75,13 +109,13 @@
     
     NSUInteger row = [indexPath row];
     
-    if(indexPath.section == 1 || (indexPath.section == 0 && [self.listData count] == 1))
+    if(indexPath.section == 1 || (indexPath.section == 0 && [self.data.listData count] == 0))
     {
-        cell.textLabel.text = [self.listData objectAtIndex:row];
+        cell.textLabel.text = @"Create New Alarm...";
     }
     else if(indexPath.section == 0)
     {
-        cell.textLabel.text = [self.listData objectAtIndex:row + 1];
+        cell.textLabel.text = [[self.data.listData objectAtIndex:row] name];
     }
     
     return cell;
@@ -141,6 +175,22 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      
+}
+
+-(IBAction)aboutView
+{
+    // Navigation logic may go here. Create and push another view controller.
+    ZTGAboutViewController *aboutViewController = [[ZTGAboutViewController alloc] initWithNibName:@"ZTGAboutViewController" bundle:nil];
+    
+    // Pass the selected object to the new view controller.
+    [self.navigationController pushViewController:aboutViewController animated:YES];
+}
+
+-(IBAction)cashoutPressed
+{
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"Operation Failed" message:@"Operation not yet developed." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end

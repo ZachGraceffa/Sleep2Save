@@ -7,11 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZTGSingleton.h"
+#import "ZTGAlarm.h"
 
 @class ZTGAlarmDetailViewController;
+@class ZTGAboutViewController;
 
 @interface ZTGAlarmViewController : UITableViewController
+@property (strong, nonatomic) ZTGSingleton *data;
 
-@property (strong, nonatomic) NSArray *listData;
+
+@property (strong, nonatomic) IBOutlet UILabel *balance;
+
+-(IBAction)aboutView;
+-(IBAction)cashoutPressed;
 
 @end

@@ -14,7 +14,7 @@
 {
     if (self = [super init])
     {
-        self.name = @"";
+        self.active = [NSNumber numberWithInt:0];
     }
     return self;
 }
@@ -27,12 +27,28 @@
 {
 }
 
-- (void)setName
-{
-}
+
 
 - (void)setRinger
 {
+}
+
+- (void)setActivity:(BOOL *) activity
+{
+    if (activity) {
+        self.active = [NSNumber numberWithInt:1];
+    }
+    else
+        self.active = [NSNumber numberWithInt:0];
+}
+
+-(BOOL)isActive
+{
+    if (self.active == [NSNumber numberWithInt:1]) {
+        return YES;
+    }
+    
+    return NO;
 }
 
 @end

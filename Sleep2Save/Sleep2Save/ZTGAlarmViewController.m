@@ -30,7 +30,7 @@
     [super viewDidLoad];
     
     self.data = [ZTGSingleton sharedInstance];
-    self.title = @"Sleep2Save";
+    self.title = @"Alarms";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -91,8 +91,8 @@
     
     NSInteger count = 0;
     
-    for (NSInteger i = 0; i < 8; i++ ) {
-        if([[[self.data.listData objectAtIndex:i] name] length] != 0)
+    for (NSUInteger i = 0; i < 8; i++ ) {
+        if([[self.data.listData objectAtIndex:i] isActive])
             count ++;
     }
     

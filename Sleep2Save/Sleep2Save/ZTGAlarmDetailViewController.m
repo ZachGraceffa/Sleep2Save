@@ -2,32 +2,31 @@
 //  ZTGAlarmDetailViewController.m
 //  Sleep2Save
 //
-//  Created by Zachary Graceffa on 11/13/13.
+//  Created by Zachary Graceffa on 11/21/13.
 //  Copyright (c) 2013 Zachary Graceffa. All rights reserved.
 //
 
 #import "ZTGAlarmDetailViewController.h"
 
+@interface ZTGAlarmDetailViewController ()
+
+@end
 
 @implementation ZTGAlarmDetailViewController
 
-/*- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
     return self;
-}*/
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    UIAlertView *alert = [[UIAlertView alloc]
-                          initWithTitle:@"Operation Failed" message:@"Operation not yet developed." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
-    [alert show];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -45,16 +44,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 2;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,11 +62,36 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    // Configure the cell...
-    cell.textLabel.text = @"testing";
+    if (indexPath.section == 0) {
+        
+        UITextField *textField = [[UITextField alloc]initWithFrame:CGRectMake(110, 10, 185, 30)];
+        textField.clearsOnBeginEditing = NO;
+        [textField setDelegate:self];
+        textField.text = @"test";
+        [cell.contentView addSubview:textField];
+    }
+    else if (indexPath.section == 1)
+    {
+        cell.textLabel.text = @"Time";
+    }
+    else if (indexPath.section == 2)
+    {
+        cell.textLabel.text = @"Days";
+    }
+    else if (indexPath.section == 3)
+    {
+        cell.textLabel.text = @"Ringer";
+    }
     
     return cell;
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)tF
+{
+    [tF resignFirstResponder];
+    return YES;
+}
+
 
 /*
 // Override to support conditional editing of the table view.

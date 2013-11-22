@@ -12,10 +12,14 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *time;
+@property (strong, nonatomic) NSNumber *active;
 
 - (void)setTime;
 - (void)setDays;
 - (void)setName;
 - (void)setRinger;
+- (void)setActivity:(BOOL *) activity;
+
+-(BOOL)isActive;
 
 @end

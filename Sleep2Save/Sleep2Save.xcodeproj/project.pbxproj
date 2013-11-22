@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92672AA418397A1400C12594 /* ZTGAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92672AA218397A1300C12594 /* ZTGAboutViewController.m */; };
-		92672AA518397A1400C12594 /* ZTGAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92672AA318397A1300C12594 /* ZTGAboutViewController.xib */; };
 		92746C7018340A8E00A66260 /* ZTGAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */; };
 		92746C7118340A8E00A66260 /* ZTGAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */; };
 		92746C8318346A5400A66260 /* ZTGSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C8218346A5400A66260 /* ZTGSingleton.m */; };
-		92746C8718347DF500A66260 /* ZTGAlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92746C8518347DF500A66260 /* ZTGAlarmDetailViewController.m */; };
-		92746C8818347DF500A66260 /* ZTGAlarmDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92746C8618347DF500A66260 /* ZTGAlarmDetailViewController.xib */; };
 		92880874183D4031002C1DE0 /* ZTGAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 92880873183D4031002C1DE0 /* ZTGAlarm.m */; };
+		92C65570184017C200D80A58 /* ZTGAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C6556E184017C200D80A58 /* ZTGAboutViewController.m */; };
+		92C65571184017C200D80A58 /* ZTGAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C6556F184017C200D80A58 /* ZTGAboutViewController.xib */; };
+		92C655731840192600D80A58 /* 2012.04.13_the_solution_to_oversleeping.png.pagespeed.ce.5CQKDKjsqA.png in Resources */ = {isa = PBXBuildFile; fileRef = 92C655721840192600D80A58 /* 2012.04.13_the_solution_to_oversleeping.png.pagespeed.ce.5CQKDKjsqA.png */; };
 		92E19D241826F3AF0087047D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D231826F3AF0087047D /* UIKit.framework */; };
 		92E19D261826F3AF0087047D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D251826F3AF0087047D /* Foundation.framework */; };
 		92E19D281826F3AF0087047D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E19D271826F3AF0087047D /* CoreGraphics.framework */; };
@@ -24,22 +23,22 @@
 		92E19D361826F3AF0087047D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E19D351826F3AF0087047D /* Default.png */; };
 		92E19D381826F3AF0087047D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E19D371826F3AF0087047D /* Default@2x.png */; };
 		92E19D3A1826F3AF0087047D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E19D391826F3AF0087047D /* Default-568h@2x.png */; };
+		92E7EF97183E8364005AB081 /* ZTGAlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E7EF95183E8364005AB081 /* ZTGAlarmDetailViewController.m */; };
+		92E7EF98183E8364005AB081 /* ZTGAlarmDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E7EF96183E8364005AB081 /* ZTGAlarmDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		92672AA118397A1300C12594 /* ZTGAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAboutViewController.h; sourceTree = "<group>"; };
-		92672AA218397A1300C12594 /* ZTGAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAboutViewController.m; sourceTree = "<group>"; };
-		92672AA318397A1300C12594 /* ZTGAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAboutViewController.xib; sourceTree = "<group>"; };
 		92746C6D18340A8D00A66260 /* ZTGAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarmViewController.h; sourceTree = "<group>"; };
 		92746C6E18340A8E00A66260 /* ZTGAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarmViewController.m; sourceTree = "<group>"; };
 		92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAlarmViewController.xib; sourceTree = "<group>"; };
 		92746C8118346A5400A66260 /* ZTGSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGSingleton.h; sourceTree = "<group>"; };
 		92746C8218346A5400A66260 /* ZTGSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGSingleton.m; sourceTree = "<group>"; };
-		92746C8418347DF500A66260 /* ZTGAlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarmDetailViewController.h; sourceTree = "<group>"; };
-		92746C8518347DF500A66260 /* ZTGAlarmDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarmDetailViewController.m; sourceTree = "<group>"; };
-		92746C8618347DF500A66260 /* ZTGAlarmDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAlarmDetailViewController.xib; sourceTree = "<group>"; };
 		92880872183D4031002C1DE0 /* ZTGAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarm.h; sourceTree = "<group>"; };
 		92880873183D4031002C1DE0 /* ZTGAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarm.m; sourceTree = "<group>"; };
+		92C6556D184017C200D80A58 /* ZTGAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAboutViewController.h; sourceTree = "<group>"; };
+		92C6556E184017C200D80A58 /* ZTGAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAboutViewController.m; sourceTree = "<group>"; };
+		92C6556F184017C200D80A58 /* ZTGAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAboutViewController.xib; sourceTree = "<group>"; };
+		92C655721840192600D80A58 /* 2012.04.13_the_solution_to_oversleeping.png.pagespeed.ce.5CQKDKjsqA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2012.04.13_the_solution_to_oversleeping.png.pagespeed.ce.5CQKDKjsqA.png; sourceTree = "<group>"; };
 		92E19D201826F3AF0087047D /* Sleep2Save.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleep2Save.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E19D231826F3AF0087047D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		92E19D251826F3AF0087047D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +52,9 @@
 		92E19D351826F3AF0087047D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		92E19D371826F3AF0087047D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		92E19D391826F3AF0087047D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		92E7EF94183E8364005AB081 /* ZTGAlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTGAlarmDetailViewController.h; sourceTree = "<group>"; };
+		92E7EF95183E8364005AB081 /* ZTGAlarmDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTGAlarmDetailViewController.m; sourceTree = "<group>"; };
+		92E7EF96183E8364005AB081 /* ZTGAlarmDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTGAlarmDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +109,14 @@
 				92746C6F18340A8E00A66260 /* ZTGAlarmViewController.xib */,
 				92746C8118346A5400A66260 /* ZTGSingleton.h */,
 				92746C8218346A5400A66260 /* ZTGSingleton.m */,
-				92746C8418347DF500A66260 /* ZTGAlarmDetailViewController.h */,
-				92746C8518347DF500A66260 /* ZTGAlarmDetailViewController.m */,
-				92746C8618347DF500A66260 /* ZTGAlarmDetailViewController.xib */,
-				92672AA118397A1300C12594 /* ZTGAboutViewController.h */,
-				92672AA218397A1300C12594 /* ZTGAboutViewController.m */,
-				92672AA318397A1300C12594 /* ZTGAboutViewController.xib */,
 				92880872183D4031002C1DE0 /* ZTGAlarm.h */,
 				92880873183D4031002C1DE0 /* ZTGAlarm.m */,
+				92E7EF94183E8364005AB081 /* ZTGAlarmDetailViewController.h */,
+				92E7EF95183E8364005AB081 /* ZTGAlarmDetailViewController.m */,
+				92E7EF96183E8364005AB081 /* ZTGAlarmDetailViewController.xib */,
+				92C6556D184017C200D80A58 /* ZTGAboutViewController.h */,
+				92C6556E184017C200D80A58 /* ZTGAboutViewController.m */,
+				92C6556F184017C200D80A58 /* ZTGAboutViewController.xib */,
 			);
 			path = Sleep2Save;
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 		92E19D2A1826F3AF0087047D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				92C655721840192600D80A58 /* 2012.04.13_the_solution_to_oversleeping.png.pagespeed.ce.5CQKDKjsqA.png */,
 				92E19D2B1826F3AF0087047D /* Sleep2Save-Info.plist */,
 				92E19D2C1826F3AF0087047D /* InfoPlist.strings */,
 				92E19D2F1826F3AF0087047D /* main.m */,
@@ -190,8 +193,9 @@
 				92E19D381826F3AF0087047D /* Default@2x.png in Resources */,
 				92E19D3A1826F3AF0087047D /* Default-568h@2x.png in Resources */,
 				92746C7118340A8E00A66260 /* ZTGAlarmViewController.xib in Resources */,
-				92746C8818347DF500A66260 /* ZTGAlarmDetailViewController.xib in Resources */,
-				92672AA518397A1400C12594 /* ZTGAboutViewController.xib in Resources */,
+				92E7EF98183E8364005AB081 /* ZTGAlarmDetailViewController.xib in Resources */,
+				92C65571184017C200D80A58 /* ZTGAboutViewController.xib in Resources */,
+				92C655731840192600D80A58 /* 2012.04.13_the_solution_to_oversleeping.png.pagespeed.ce.5CQKDKjsqA.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +210,9 @@
 				92E19D341826F3AF0087047D /* ZTGAppDelegate.m in Sources */,
 				92746C7018340A8E00A66260 /* ZTGAlarmViewController.m in Sources */,
 				92746C8318346A5400A66260 /* ZTGSingleton.m in Sources */,
-				92746C8718347DF500A66260 /* ZTGAlarmDetailViewController.m in Sources */,
-				92672AA418397A1400C12594 /* ZTGAboutViewController.m in Sources */,
 				92880874183D4031002C1DE0 /* ZTGAlarm.m in Sources */,
+				92E7EF97183E8364005AB081 /* ZTGAlarmDetailViewController.m in Sources */,
+				92C65570184017C200D80A58 /* ZTGAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

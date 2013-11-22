@@ -17,7 +17,11 @@
         
         for (int i = 0; i < 8; i++ ) {
             ZTGAlarm *alarm = [[ZTGAlarm alloc] init];
-            [self.listData addObject:alarm];//error line!!
+            
+            [alarm setName:[NSString stringWithFormat:@"Alarm %d", i]];
+            
+            [self.listData addObject:alarm];
+            
         }
         
         self.balance = [NSNumber numberWithDouble:0.00];
